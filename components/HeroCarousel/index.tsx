@@ -7,7 +7,7 @@ const heroSlides = [
     subtitle: "WAN 2.2 Image generation",
     description:
       "Generate complex images with the brand new and powerful WAN 2.2 model. Exceptional prompt adherence and ultra-realistic textures.",
-    backgroundImage: "/placeholder.svg?height=400&width=600",
+    backgroundImage: "/carousels/carousel-image1.png",
     buttonText: "Try WAN 2.2",
   },
   {
@@ -16,7 +16,7 @@ const heroSlides = [
     subtitle: "Anime Character Generation",
     description:
       "Create stunning anime characters with incredible detail and artistic flair using our advanced character generation models.",
-    backgroundImage: "/placeholder.svg?height=400&width=600",
+    backgroundImage: "/carousels/carousel-image2.png",
     buttonText: "Generate Character",
   },
   {

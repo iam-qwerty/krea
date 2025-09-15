@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <HeroCarousel />
       <GenerateSection />
-      <GallerySection curator={{ name: "Mobbin", avatar: "" }} />
+      <GallerySection />
     </div>
   )
 }

@@ -71,7 +71,7 @@ export function GenerateSection() {
     <div className="max-w-[1570px] mx-auto">
       <section className="mb-8 px-6 md:px-8" aria-labelledby="generate-title">
         <div className="flex justify-between items-center mb-4">
-          <h2 id="generate-title" className="text-2xl font-semibold text-gray-900">
+          <h2 id="generate-title" className="text-2xl font-semibold text-primary">
             Generate
           </h2>
           <a 

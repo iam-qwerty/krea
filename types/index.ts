@@ -36,10 +36,3 @@ export interface GenerateCardProps extends GenerateCard {
   onOpen?: () => void
   colorScheme: string
 }
-
-export interface GallerySectionProps {
-  curator: {
-    name: string
-    avatar: string
-  }
-}

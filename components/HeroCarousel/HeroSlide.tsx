@@ -8,8 +8,8 @@ export function HeroSlide({ title, subtitle, description, backgroundImage, butto
         className="h-96 rounded-2xl bg-cover bg-center relative overflow-hidden"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="absolute top-4 left-6 text-xs">
+        <div className="absolute inset-0"></div>
+        <div className="absolute top-4 left-6 text-xs text-white">
           NEW IMAGE MODEL
         </div>
         <div className="absolute bottom-6 left-6 right-6">

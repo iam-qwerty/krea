@@ -1,22 +1,21 @@
 import { Button } from "@/components/ui/button"
-import { type GallerySectionProps } from "@/types"
 
-export function GallerySection({ curator }: GallerySectionProps) {
+export function GallerySection() {
   return (
     <section className="px-6 py-8">
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-semibold">Gallery</h2>
         <div className="flex items-center gap-4">
-          <Button variant="muted" size="sm" className="text-muted-foreground dark:text-gray-400">
+          <Button variant="muted" size="sm" className="text-muted-foreground">
             Legal
           </Button>
-          <Button variant="muted" size="sm" className="text-muted-foreground dark:text-gray-400">
+          <Button variant="muted" size="sm" className="text-muted-foreground">
             Pricing
           </Button>
         </div>
       </div>
 
-      <div className="flex items-center justify-between mt-8">
+      {/* <div className="flex items-center justify-between mt-8">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-gray-900 dark:bg-white rounded-lg flex items-center justify-center">
             <span className="text-white dark:text-black font-bold">K</span>
@@ -27,10 +26,10 @@ export function GallerySection({ curator }: GallerySectionProps) {
           <span>curated by</span>
           <div className="flex items-center gap-1">
             <div className="w-6 h-6 bg-gray-900 dark:bg-white rounded"></div>
-            <span className="font-semibold text-gray-900 dark:text-white">{curator.name}</span>
+            <span className="font-semibold text-gray-900 dark:text-white">Mobbin</span>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
