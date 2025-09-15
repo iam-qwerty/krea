@@ -16,8 +16,8 @@ export interface GenerateCard {
   isNew?: boolean
 }
 
-export interface HeaderProps {
-  username: string
+export interface NavigationProps {
+  className?: string
 }
 
 export interface UserActionsProps {

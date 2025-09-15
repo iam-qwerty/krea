@@ -6,7 +6,7 @@ import { GallerySection } from "@/components/GallerySection"
 export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white transition-colors">
-      <Header username="benevolentmimblebat" />
+      <Header />
       <HeroCarousel />
       <GenerateSection />
       <GallerySection curator={{ name: "Mobbin", avatar: "" }} />

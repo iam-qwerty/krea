@@ -8,9 +8,11 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "Krea - AI Art Generator & Gallery",
+  description: "Create stunning AI-generated art and explore a curated gallery of masterpieces.",
+  icons: {
+    icon: "/globe.svg",
+  },
 }
 
 export default function RootLayout({

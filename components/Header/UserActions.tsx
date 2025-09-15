@@ -7,20 +7,20 @@ export function UserActions({ className }: UserActionsProps) {
   return (
     <div className={className}>
       <Button
-        variant="ghost"
+        variant="muted"
         size="sm"
-        className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white text-sm px-2 py-1 h-8"
+        className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white text-sm px-2 py-1 h-8 bg-muted"
       >
         Gallery
       </Button>
       <Button
-        variant="ghost"
+        variant="muted"
         size="sm"
         className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white text-sm px-2 py-1 h-8"
       >
         Support
       </Button>
-      <Button variant="ghost" size="sm" className="p-2 h-8 w-8">
+      <Button variant="muted" size="sm" className="p-2 h-8 w-8">
         <Bell className="w-4 h-4" />
       </Button>
       <ThemeToggle />

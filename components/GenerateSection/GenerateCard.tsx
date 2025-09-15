@@ -21,14 +21,14 @@ export function GenerateCard({ icon, title, description, isNew, colorScheme, onO
   };
 
   return (
-    <div className="bg-white border border-gray-100 rounded-xl p-3 flex justify-between items-center transition-all duration-150 hover:shadow-md hover:-translate-y-0.5 min-h-[88px]">
+    <div className="bg-transparent dark:bg-card border-gray-100 rounded-xl p-3 flex justify-between items-center transition-all duration-150 hover:shadow-md hover:-translate-y-0.5 min-h-[88px]">
       <div className="flex items-center gap-4">
         <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-white text-2xl ${getIconBg()}`}>
           {icon}
         </div>
         <div className="flex-1">
           <div className="flex items-center gap-2">
-            <h3 className="text-base font-semibold text-gray-900">{title}</h3>
+            <h3 className="text-base font-semibold text-primary">{title}</h3>
             {isNew && (
               <span className="bg-blue-500 text-white px-2 py-0.5 rounded-full text-xs font-bold">
                 New
@@ -40,7 +40,7 @@ export function GenerateCard({ icon, title, description, isNew, colorScheme, onO
       </div>
       <button 
         onClick={onOpen}
-        className="px-6 py-2 bg-gray-100 text-gray-900 border-0 rounded-full font-semibold text-sm cursor-pointer transition-all duration-150 hover:bg-gray-300"
+        className="px-6 py-2 bg-muted text-muted-foreground border-0 rounded-full font-semibold text-sm cursor-pointer transition-all duration-150 hover:bg-gray-300"
       >
         Open
       </button>

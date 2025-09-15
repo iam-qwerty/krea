@@ -7,10 +7,10 @@ export function GallerySection({ curator }: GallerySectionProps) {
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-semibold">Gallery</h2>
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="sm" className="text-gray-600 dark:text-gray-400">
+          <Button variant="muted" size="sm" className="text-muted-foreground dark:text-gray-400">
             Legal
           </Button>
-          <Button variant="ghost" size="sm" className="text-gray-600 dark:text-gray-400">
+          <Button variant="muted" size="sm" className="text-muted-foreground dark:text-gray-400">
             Pricing
           </Button>
         </div>
@@ -23,7 +23,7 @@ export function GallerySection({ curator }: GallerySectionProps) {
           </div>
           <span className="text-xl font-semibold">Krea AI</span>
         </div>
-        <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+        <div className="flex items-center gap-2 text-muted-foreground dark:text-gray-400">
           <span>curated by</span>
           <div className="flex items-center gap-1">
             <div className="w-6 h-6 bg-gray-900 dark:bg-white rounded"></div>

@@ -1,6 +1,6 @@
 import { ChevronDown } from "lucide-react"
 
-export function Logo({ username }: { username: string }) {
+export function Logo() {
   return (
     <div className="flex items-center gap-4">
       <div className="flex items-center gap-2">
@@ -8,8 +8,8 @@ export function Logo({ username }: { username: string }) {
           <span className="text-white dark:text-black font-bold text-sm">K</span>
         </div>
       </div>
-      <div className="flex items-center gap-1 px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer">
-        <span className="text-sm text-gray-700 dark:text-gray-300">{username}</span>
+      <div className="flex items-center gap-2 px-2 py-1 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer">
+        <span className="text-sm text-gray-700 dark:text-white">benevolentmimblebat</span>
         <ChevronDown className="w-4 h-4 text-gray-500" />
       </div>
     </div>

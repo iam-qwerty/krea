@@ -1,29 +1,34 @@
 import { Button } from "@/components/ui/button"
 import { Home, Folder, VideoIcon, PenTool, Type, FolderOpen } from "lucide-react"
+import { cn } from "@/lib/utils"
 
-export function Navigation() {
+interface NavigationProps {
+  className?: string
+}
 
-  const links = [
-    { icon: <Home/>, label: "Home" },
-    { icon: <Folder/>, label: "Projects" },
-    { icon: <VideoIcon/>, label: "Videos" },
-    { icon: <PenTool/>, label: "Designs" },
-    { icon: <Type/>, label: "Documents" },
-    { icon: <FolderOpen/>, label: "Archives" },
-  ]
+const navigationLinks = [
+  { icon: <Home className="w-4 h-4" />, label: "Home" },
+  { icon: <Folder className="w-4 h-4" />, label: "Projects" },
+  { icon: <VideoIcon className="w-4 h-4" />, label: "Videos" },
+  { icon: <PenTool className="w-4 h-4" />, label: "Designs" },
+  { icon: <Type className="w-4 h-4" />, label: "Documents" },
+  { icon: <FolderOpen className="w-4 h-4" />, label: "Archives" },
+]
 
+export function Navigation({ className }: NavigationProps) {
   return (
-    <div className="flex items-center gap-2 bg-accent rounded-xl lg:p-1">
-      {links.map((link) => (
+    <nav className={cn("flex items-center gap-2 bg-muted rounded-xl lg:p-1", className)}>
+      {navigationLinks.map((link) => (
         <Button
           key={link.label}
-          variant="ghost"
-          size="sm"
-          className="flex justify-center items-center hover:bg-white hover:shadow-2xl dark:hover:text-white"
+          variant="muted"
+          size="icon"
+          className="flex justify-center items-center hover:bg-white"
+          aria-label={link.label}
         >
-          <span className="w-4 h-4 ">{link.icon}</span>
+          {link.icon}
         </Button>
       ))}
-    </div>
+    </nav>
   )
 }

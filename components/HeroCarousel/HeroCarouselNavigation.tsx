@@ -30,20 +30,22 @@ export function HeroCarouselNavigation({ slides }: HeroCarouselProps) {
 
       {/* Navigation Arrows */}
       <Button
-        variant="ghost"
+        variant="muted"
         size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-muted text-muted-foreground hover:bg-muted/80"
         onClick={prevSlide}
+        aria-label="Previous slide"
       >
-        <ChevronLeft className="w-6 h-6" />
+        <ChevronLeft className="size-6" />
       </Button>
       <Button
-        variant="ghost"
+        variant="muted"
         size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-muted text-muted-foreground hover:bg-muted/80"
         onClick={nextSlide}
+        aria-label="Next slide"
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronRight className="size-6" />
       </Button>
 
       {/* Slide Indicators */}

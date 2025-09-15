@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { type HeroSlide as HeroSlideType } from "@/types"
 
 export function HeroSlide({ title, subtitle, description, backgroundImage, buttonText }: HeroSlideType) {
