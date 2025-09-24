@@ -23,10 +23,6 @@ export interface HeroCarouselProps {
   slides: HeroSlide[]
 }
 
-export interface GenerateSectionProps {
-  cards: GenerateCard[]
-}
-
 export interface GenerateCardProps extends GenerateCard {
   onOpen?: () => void
 }
