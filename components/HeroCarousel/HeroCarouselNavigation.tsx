@@ -28,37 +28,42 @@ export function HeroCarouselNavigation({ slides }: HeroCarouselProps) {
         ))}
       </div>
 
-      {/* Navigation Arrows */}
-      <Button
-        variant="muted"
-        size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-muted text-muted-foreground hover:bg-muted/80"
-        onClick={prevSlide}
-        aria-label="Previous slide"
-      >
-        <ChevronLeft className="size-6" />
-      </Button>
-      <Button
-        variant="muted"
-        size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-muted text-muted-foreground hover:bg-muted/80"
-        onClick={nextSlide}
-        aria-label="Next slide"
-      >
-        <ChevronRight className="size-6" />
-      </Button>
+
 
       {/* Slide Indicators */}
-      <div className="flex justify-center gap-2 mt-6">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            className={`w-2 h-2 rounded-full transition-colors ${
-              index === currentSlide ? "bg-gray-900 dark:bg-white" : "bg-gray-400 dark:bg-gray-600"
-            }`}
-            onClick={() => setCurrentSlide(index)}
-          />
-        ))}
+      <div className="flex mt-6 justify-between px-8">
+        <span></span>
+        <div className="flex justify-center gap-2">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              className={`w-2 h-2 rounded-full transition-colors ${index === currentSlide ? "bg-gray-900 dark:bg-white" : "bg-gray-400 dark:bg-gray-600"
+                }`}
+              onClick={() => setCurrentSlide(index)}
+            />
+          ))}
+        </div>
+        <div>
+          {/* Navigation Arrows */}
+          <Button
+            variant="muted"
+            size="icon"
+            className="-translate-y-1/2 bg-muted text-muted-foreground hover:bg-muted/80 rounded-full"
+            onClick={prevSlide}
+            aria-label="Previous slide"
+          >
+            <ChevronLeft className="size-6" />
+          </Button>
+          <Button
+            variant="muted"
+            size="icon"
+            className=" -translate-y-1/2 bg-muted text-muted-foreground hover:bg-muted/80 rounded-full"
+            onClick={nextSlide}
+            aria-label="Next slide"
+          >
+            <ChevronRight className="size-6" />
+          </Button>
+        </div>
       </div>
     </div>
   )

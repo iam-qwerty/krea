@@ -7,9 +7,11 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white transition-colors">
       <Header />
-      <HeroCarousel />
-      <GenerateSection />
-      <GallerySection />
+      <main className="px-0">
+        <HeroCarousel />
+        <GenerateSection />
+        <GallerySection />
+      </main>
     </div>
   )
 }

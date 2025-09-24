@@ -1,4 +1,3 @@
-import { type ReactNode } from "react"
 
 export interface HeroSlide {
   id: string
@@ -10,14 +9,10 @@ export interface HeroSlide {
 }
 
 export interface GenerateCard {
-  icon: ReactNode
+  image: string
   title: string
   description: string
   isNew?: boolean
-}
-
-export interface NavigationProps {
-  className?: string
 }
 
 export interface UserActionsProps {
@@ -34,5 +29,4 @@ export interface GenerateSectionProps {
 
 export interface GenerateCardProps extends GenerateCard {
   onOpen?: () => void
-  colorScheme: string
 }

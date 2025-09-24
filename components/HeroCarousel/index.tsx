@@ -11,6 +11,15 @@ const heroSlides = [
     buttonText: "Try WAN 2.2",
   },
   {
+    id: "open-source",
+    title: "Open Source",
+    subtitle: "FLUX.1 Krea",
+    description:
+      "We're making the weights to our FLUX.1 Krea model open-source. Download and run our model weights, read the technical report, or generate with it in Krea Image.",
+    backgroundImage: "/carousels/carousel-image2.png",
+    buttonText: "Learn More",
+  },
+  {
     id: "anime-character",
     title: "Character AI",
     subtitle: "Anime Character Generation",
@@ -19,20 +28,11 @@ const heroSlides = [
     backgroundImage: "/carousels/carousel-image2.png",
     buttonText: "Generate Character",
   },
-  {
-    id: "open-source",
-    title: "Open Source",
-    subtitle: "FLUX.1 Krea",
-    description:
-      "We're making the weights to our FLUX.1 Krea model open-source. Download and run our model weights, read the technical report, or generate with it in Krea Image.",
-    backgroundImage: "/placeholder.svg?height=400&width=600",
-    buttonText: "Learn More",
-  },
 ]
 
 export function HeroCarousel() {
   return (
-    <section className="relative px-6 md:pr-0 md: py-8">
+    <section className="relative px-4 sm:px-6 md:pr-0 md:py-8 lg:mb-8">
       <HeroCarouselNavigation slides={heroSlides} />
     </section>
   )
